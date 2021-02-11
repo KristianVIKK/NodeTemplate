@@ -20,10 +20,10 @@
     <button @click="removeCount()">-</button> -->
 
  
-    <b-table striped hover :items="items">
+    <!-- <b-table striped hover :items="items">
       <template #cell(productPrice)="data">
         <b class="text-info">{{ data.productPrice }} EUR</b>
-      </template>
+      </template> -->
     </b-table>
   
 

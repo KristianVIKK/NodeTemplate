@@ -41,7 +41,7 @@ export default {
       
       count: 0,
       
-      fields: ['orderID', 'toWhom', 'orderingDate', 'status', { key: 'price', label: 'Hind' }, 'actions'],
+      fields: [ {key:'orderID', label: 'Tellimuse ID'}, {key:'toWhom', label: 'Kellele'}, {key:'orderingDate', label: 'Tellimuse kp.'}, {key:'toCounty', label: 'Riik'}, {key:'toCity', label: 'Linn'},{key:'toStreet', label: 'Tänav'}, {key:'toHouse', label: 'Maja/korteri nr.'}, {key:'status', label: 'Staatus'},  'actions'],
       items: [],
       productFields: [],
       productItems: [],
@@ -56,9 +56,8 @@ export default {
     })
     console.log('orders', orders)
 
-    //this.items = orders.data.allOrders
-
-    this.items = [{"orderDate":"2021-01-31T09:28:58.250Z","_id":"601678abe3d51ab2cc5703d3","products":[{"category":"CLOTHES","_id":"601678abe3d51ab2cc5703d4","name":"Valge pluus","productCode":"","price":20,"notes":"","amount":1}],"price":20,"status":"DONE","orderNumber":"TELLIMUS-1","__v":0,"id":"601678abe3d51ab2cc5703d3"},{"orderDate":"2021-01-31T09:31:06.415Z","_id":"601678f79de1aeb314a93313","products":[{"category":"CLOTHES","_id":"601678f79de1aeb314a93314","name":"Ilus valge pluus","productCode":"","price":20,"notes":"","amount":1}],"price":20,"status":"DONE","orderNumber":"TELLIMUS-2","__v":0,"id":"601678f79de1aeb314a93313"},{"orderDate":"2021-01-31T11:04:14.415Z","_id":"60168f5968c486b5d8b1dca6","products":[{"_id":"60168f5968c486b5d8b1dca7","name":"Ilus valge pluus","productCode":"123A123A123A1","category":"CLOTHES","price":20,"notes":"Kergesti määrduv","amount":1},{"_id":"60168f5968c486b5d8b1dca8","name":"Kollane pluus","productCode":"123A123A123A4","category":"CLOTHES","price":20,"notes":"","amount":2}],"price":60,"status":"DONE","orderNumber":"TELLIMUS-3","__v":0,"id":"60168f5968c486b5d8b1dca6"}]
+   
+    this.items = orders.data.allOrders
   },
   methods: {
     showProducts (products, item) {
