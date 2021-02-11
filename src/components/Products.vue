@@ -46,7 +46,7 @@ export default {
       
 
       fields: [{key:'_id', label: 'Toote ID'}, {key: 'productName', label: 'Tootenimi'}, {key: 'productCat', label: 'Kategooria'}, 
-      {key: 'productQty', label: 'Kogus'}, {key: 'productDescription', label: 'Tootekirjeldus'}, { key: 'productPrice', label: 'Hind' }],
+      {key: 'productQty', label: 'Kogus'}, {key: 'productDescription', label: 'Tootekirjeldus'}, { key: 'productPrice.$numberDecimal', label: 'Hind' }],
       items: [],
       
      
